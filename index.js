@@ -20,7 +20,7 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://password-reset-flow-react.netlify.app",
     credentials: true,
   })
 );
