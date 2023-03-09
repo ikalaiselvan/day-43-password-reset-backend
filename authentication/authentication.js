@@ -130,7 +130,7 @@ router.post("/forgotPassword", async function (request, response) {
         createdAt: new Date(),
       });
 
-    const link = `http://localhost:3000/passwordReset?token=${newToken}&id=${existingUser._id.toString()}`;
+    const link = `https://password-reset-flow-react.netlify.app/passwordReset?token=${newToken}&id=${existingUser._id.toString()}`;
 
     await sendEmail(existingUser.email, "Password Reset Link : ", {
       name: existingUser.name,
